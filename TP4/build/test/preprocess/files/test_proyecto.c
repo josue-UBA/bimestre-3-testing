@@ -8,21 +8,61 @@ extern int registro[];
 
 
 
-void test_acelerador(void)
+void test_acelerador_0(void)
 
 {
 
     init_registro();
 
-    registro[1];
+    registro[1] = 4;
 
-    int num = acelerador(3);
+    int num = acelerador_0(5);
+
+    UnityAssertEqualNumber((UNITY_INT)((9)), (UNITY_INT)((num)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(12), UNITY_DISPLAY_STYLE_INT);
+
+}
+
+
+
+void test_acelerador_1(void)
+
+{
+
+    init_registro();
+
+    registro[1] = 4;
+
+    int num = acelerador_1(5);
 
     UnityAssertEqualNumber((UNITY_INT)((1)), (UNITY_INT)((num)), (
 
    ((void *)0)
 
-   ), (UNITY_UINT)(12), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(20), UNITY_DISPLAY_STYLE_INT);
+
+}
+
+
+
+void test_acelerador_2(void)
+
+{
+
+    init_registro();
+
+    registro[1] = 4;
+
+    int num = acelerador_2(5);
+
+    UnityAssertEqualNumber((UNITY_INT)((20)), (UNITY_INT)((num)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(28), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -40,7 +80,7 @@ void test_registro(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(19), UNITY_DISPLAY_STYLE_INT, UNITY_ARRAY_TO_ARRAY);
+   ), (UNITY_UINT)(35), UNITY_DISPLAY_STYLE_INT, UNITY_ARRAY_TO_ARRAY);
 
 }
 
@@ -58,6 +98,32 @@ void test_poner_pesos(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(26), UNITY_DISPLAY_STYLE_INT, UNITY_ARRAY_TO_ARRAY);
+   ), (UNITY_UINT)(42), UNITY_DISPLAY_STYLE_INT, UNITY_ARRAY_TO_ARRAY);
+
+}
+
+
+
+void test_sistema(void)
+
+{
+
+    init_registro();
+
+    int valor = sistema(8);
+
+    init_registro();
+
+    set_tipo_acelerador(2);
+
+    set_tipo_funcion_activacion(1);
+
+    UnityAssertEqualNumber((UNITY_INT)((20)), (UNITY_INT)((20)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(52), UNITY_DISPLAY_STYLE_INT);
+
+
 
 }
