@@ -15,3 +15,25 @@ void test_suma(void){
    ), (UNITY_UINT)(7), UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+
+
+void test_acelerador(void){
+
+
+
+    init_registro();
+
+    int num = acelerador(2, 3);
+
+
+
+    UnityAssertEqualNumber((UNITY_INT)((5)), (UNITY_INT)((num)), (
+
+   ((void *)0)
+
+   ), (UNITY_UINT)(16), UNITY_DISPLAY_STYLE_INT);
+
+}

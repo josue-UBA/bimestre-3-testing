@@ -11,6 +11,7 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_suma(void);
+extern void test_acelerador(void);
 
 
 /*=======Mock Management=====*/
@@ -82,6 +83,7 @@ int main(void)
 {
   UnityBegin("test_proyecto.c");
   run_test(test_suma, "test_suma", 4);
+  run_test(test_acelerador, "test_acelerador", 11);
 
   return UnityEnd();
 }
