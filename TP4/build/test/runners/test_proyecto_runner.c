@@ -84,8 +84,8 @@ int main(void)
 {
   UnityBegin("test_proyecto.c");
   run_test(test_acelerador, "test_acelerador", 7);
-  run_test(test_registro, "test_registro", 13);
-  run_test(test_poner_pesos, "test_poner_pesos", 19);
+  run_test(test_registro, "test_registro", 15);
+  run_test(test_poner_pesos, "test_poner_pesos", 22);
 
   return UnityEnd();
 }

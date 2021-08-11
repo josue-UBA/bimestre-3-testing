@@ -3,24 +3,24 @@
   :path: test
   :file: test_proyecto.c
 :successes:
-- :test: test_acelerador
-  :line: 7
-  :message: ''
-  :unity_test_time: 0
 - :test: test_registro
-  :line: 13
+  :line: 15
   :message: ''
   :unity_test_time: 0
 - :test: test_poner_pesos
-  :line: 19
+  :line: 22
   :message: ''
   :unity_test_time: 0
-:failures: []
+:failures:
+- :test: test_acelerador
+  :line: 12
+  :message: Expected 1 Was 3
+  :unity_test_time: 0
 :ignores: []
 :counts:
   :total: 3
-  :passed: 3
-  :failed: 0
+  :passed: 2
+  :failed: 1
   :ignored: 0
 :stdout: []
-:time: 0.006883631998789497
+:time: 0.007085328001267044
