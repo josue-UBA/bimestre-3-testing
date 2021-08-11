@@ -12,6 +12,7 @@ extern void setUp(void);
 extern void tearDown(void);
 extern void test_suma(void);
 extern void test_acelerador(void);
+extern void test_registro(void);
 
 
 /*=======Mock Management=====*/
@@ -82,8 +83,9 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_proyecto.c");
-  run_test(test_suma, "test_suma", 4);
-  run_test(test_acelerador, "test_acelerador", 11);
+  run_test(test_suma, "test_suma", 5);
+  run_test(test_acelerador, "test_acelerador", 12);
+  run_test(test_registro, "test_registro", 20);
 
   return UnityEnd();
 }
