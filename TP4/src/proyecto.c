@@ -1,6 +1,6 @@
 #include "proyecto.h"
 
-#define TAM_REG 4
+
 int registro[TAM_REG]={1,1,1,1};
 int pesos[3]={0,0,0};
 int suma(int a0, int a1){

@@ -2,11 +2,6 @@
 #include "proyecto.h"
 extern int pesos[];
 extern int registro[];
-void test_suma(void){
-    int a = 2;
-    int b = 1;
-    TEST_ASSERT_EQUAL_INT(a,b);
-}
 
 
 void test_acelerador(void){
@@ -16,8 +11,9 @@ void test_acelerador(void){
 
     TEST_ASSERT_EQUAL_INT(5,num);
 }
-
+/* validar si el registro fue inicializado correctamente */
 void test_registro(void){
-    int aux[4]={0,0,0,0};
-    TEST_ASSERT_EQUAL_INT_ARRAY(aux,registro,4);
+    init_registro();
+    int aux[TAM_REG]={0,0,0,0};
+    TEST_ASSERT_EQUAL_INT_ARRAY(aux,registro,TAM_REG);
 }

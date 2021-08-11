@@ -4,20 +4,6 @@ extern int pesos[];
 
 extern int registro[];
 
-void test_suma(void){
-
-    int a = 2;
-
-    int b = 1;
-
-    UnityAssertEqualNumber((UNITY_INT)((a)), (UNITY_INT)((b)), (
-
-   ((void *)0)
-
-   ), (UNITY_UINT)(8), UNITY_DISPLAY_STYLE_INT);
-
-}
-
 
 
 
@@ -36,7 +22,7 @@ void test_acelerador(void){
 
    ((void *)0)
 
-   ), (UNITY_UINT)(17), UNITY_DISPLAY_STYLE_INT);
+   ), (UNITY_UINT)(12), UNITY_DISPLAY_STYLE_INT);
 
 }
 
@@ -44,12 +30,14 @@ void test_acelerador(void){
 
 void test_registro(void){
 
+    init_registro();
+
     int aux[4]={0,0,0,0};
 
     UnityAssertEqualIntArray(( const void*)((aux)), ( const void*)((registro)), (UNITY_UINT32)((4)), (
 
    ((void *)0)
 
-   ), (UNITY_UINT)(22), UNITY_DISPLAY_STYLE_INT, UNITY_ARRAY_TO_ARRAY);
+   ), (UNITY_UINT)(18), UNITY_DISPLAY_STYLE_INT, UNITY_ARRAY_TO_ARRAY);
 
 }
