@@ -4,6 +4,7 @@
 
 
 #define TAM_REG 4
+#define TAM_PES 3
 
 int suma(int a0, int a1);
 void init_registro(void);

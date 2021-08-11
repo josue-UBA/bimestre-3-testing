@@ -8,8 +8,8 @@ int suma(int a0, int a1){
 }
 void poner_pesos(int a0, int a1, int a2){
     pesos[0]=a0;
-    pesos[1]=a0;
-    pesos[2]=a0;
+    pesos[1]=a1;
+    pesos[2]=a2;
 }
 void init_registro(void){
     registro[0]=0;
