@@ -42,13 +42,12 @@ void test_poner_pesos(void)
     TEST_ASSERT_EQUAL_INT_ARRAY(aux, pesos, TAM_PES);
 }
 
+/* validamos el correcto funcionamiento del sistema completo */
 void test_sistema(void)
 {
     init_registro();
-    int valor = sistema(8);
-    init_registro();
     set_tipo_acelerador(2);         /* acelerador tipo 2 */
-    set_tipo_funcion_activacion(1); /* funcion de activacion tipo 1*/
-    TEST_ASSERT_EQUAL_INT(20, 20); /* 1 es el valor esperado */
-
+    set_tipo_funcion_activacion(5); /* funcion de activacion tipo 1*/
+    int valor = sistema(8);
+    TEST_ASSERT_EQUAL_INT(40, valor);  /* 1 es el valor esperado */
 }

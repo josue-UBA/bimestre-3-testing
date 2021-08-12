@@ -110,20 +110,16 @@ void test_sistema(void)
 
     init_registro();
 
-    int valor = sistema(8);
-
-    init_registro();
-
     set_tipo_acelerador(2);
 
-    set_tipo_funcion_activacion(1);
+    set_tipo_funcion_activacion(5);
 
-    UnityAssertEqualNumber((UNITY_INT)((20)), (UNITY_INT)((20)), (
+    int valor = sistema(8);
+
+    UnityAssertEqualNumber((UNITY_INT)((40)), (UNITY_INT)((valor)), (
 
    ((void *)0)
 
-   ), (UNITY_UINT)(52), UNITY_DISPLAY_STYLE_INT);
-
-
+   ), (UNITY_UINT)(51), UNITY_DISPLAY_STYLE_INT);
 
 }
